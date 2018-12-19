@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+  <meta name="format-datection" content="telephone=no,email=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+  <script src="lib/jquery-3.3.1.js"></script>
+  <script src="js/quanzi.js"></script>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <style>
+
+    #test {
+      position: absolute;
+      width: 60vw;
+      height: 33vw;
+      top: 40vw;
+      left: 95vw;
+    }
+    .quanzi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5vw;
+    }
+    .swiper {
+      margin-bottom: 5vw;
+
+    }
+    .swiper img {
+      width: 77.33vw;
+      height: 44.26vw;
+    }
+    comment-container {
+      width: 80vw;
+    }
+    #comment {
+      width: 100%;
+      height: 100%;
+    }
+
+
+  </style>
+<body>
+  <div class="header">
+    <p>圈子</p>
+  </div>
+  <div class="search">
+    <img id="search-bg" src="./img/search-bg@2x.png"/>
+    <input type="text" placeholder="请搜索活动">
+  </div>
+
+  <div class="quanzi">
+    <div class="swiper">
+      <img src="./img/laorenyuhai@2x.png" alt="">
+      <img id="test" src="./img/jinshequ@2x.png" alt="">
+    </div>
+
+    <div class="comment-container">
+      <img id="comment" src="./img/comment@2x.png" alt="">
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-bar">
+    <img id="foot-bg" src="./img/footer.png" alt="">
+    <div id="huodong">
+      <img src="img/huodong@2x.png"/></div>
+    <div id="quanzi">
+      <img src="img/quanzi-active@2x.png"/></div>
+    <div id="wode">
+      <img src="img/my@2x.png"/></div>
+  </div>
+</footer>
+
+  <script>
+    $(document.body).css({
+      "overflow-x":"hidden",
+    });
+  $('#huodong').click(function () {
+  location.replace('index.html')
+  })
+  $('#quanzi').click(function () {
+  location.replace("quanzi.html")
+  })
+  $('#wode').click(function () {
+  location.replace("mine.html")
+  })
+  </script>
+</body>
+</html>
